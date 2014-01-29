@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140129155526) do
+ActiveRecord::Schema.define(version: 20140129160904) do
 
   create_table "spree_activator_translations", force: true do |t|
     t.integer  "spree_activator_id"
@@ -478,6 +478,20 @@ ActiveRecord::Schema.define(version: 20140129155526) do
 
   add_index "spree_roles_users", ["role_id"], name: "index_spree_roles_users_on_role_id"
   add_index "spree_roles_users", ["user_id"], name: "index_spree_roles_users_on_user_id"
+
+  create_table "spree_schweine", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.date     "date_of_birth"
+    t.date     "date_of_death"
+    t.integer  "weight"
+    t.string   "meta_keywords"
+    t.string   "meta_description"
+    t.datetime "deleted_at"
+    t.string   "permalink"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_shipments", force: true do |t|
     t.string   "tracking"

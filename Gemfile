@@ -24,3 +24,12 @@ gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 # Spree Pagseguro
 gem 'pag_seguro', github: 'heavenstudio/pag_seguro', branch: 'master'
 gem 'spree_pagseguro', github: 'jnettome/spree_pagseguro'
+
+
+
+
+# Spree Themes
+
+# Do a commit fixing compass-rails requirement
+# gem 'spree_yoexporto', github: 'vlledo/yoexportoaceite-theme', branch: '2-1-stable'
+# gem 'compass-rails'
